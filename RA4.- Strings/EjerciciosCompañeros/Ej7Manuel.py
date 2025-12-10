@@ -1,7 +1,6 @@
 ''' Pedir por teclado una cadena de texto y “analizarla” con distintas funciones.
 Deberá contar la longitud total, contar las letras (mirar str.isaplha()), 
 contar los números, contar los caracteres especiales y contar los espacios'''
-
 def contarLetras(frase, dic):
     for caracter in frase:
         if(caracter.isalpha()):
