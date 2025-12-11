@@ -39,5 +39,6 @@ diccionarioCaracteres = contarNumeros(frase, diccionarioCaracteres)
 diccionarioCaracteres = contarEspeciales(frase, diccionarioCaracteres)
 diccionarioCaracteres = contarEspacios(frase, diccionarioCaracteres)
 
+print(frase)
 for clave, valor in diccionarioCaracteres.items():
     print(f"{clave}: {len(valor)}")

@@ -6,4 +6,6 @@ def comprobarMayusculas(frase):
             return False
     return True
 
-print(comprobarMayusculas("SOY TODO MAYUSCULAS"))
+frase = "soY todo MAYUSCulas?"
+esMayuscula = comprobarMayusculas(frase)
+print(esMayuscula)

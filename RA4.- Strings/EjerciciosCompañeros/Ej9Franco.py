@@ -25,7 +25,6 @@ def conversorMessenger(frase, num):
         listaPalabras = frase.split()
         listaPalabras.reverse()
         fraseConvertida = " ".join(listaPalabras)
-
     return fraseConvertida
 
 numPalabras = contadorPalabras(frase)

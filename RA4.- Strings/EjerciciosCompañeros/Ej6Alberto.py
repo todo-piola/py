@@ -10,7 +10,6 @@ def validarCorreo(email, intentos):
         print(f"Email inválido. Tiene {intentos} intentos restantes")
         return intentos
 
-
 intentos = 3
 
 while(intentos > 0):
