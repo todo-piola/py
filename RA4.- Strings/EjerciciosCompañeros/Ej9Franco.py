@@ -5,6 +5,12 @@ Si ese número es par, convierte las letras pares a mayúsculas y las impares a 
 Si el número es impar, devuelve la frase con las palabras con el orden invertido.'''
 
 frase = "Estoy estudiando Python no quiero suspender"
+word1 = "caracola"
+word2 = "Caracola"
+if word1 > word2:
+    print("k pacha aqui")
+elif word2 > word1:
+    print("asaaaaa")
 
 def contadorPalabras(frase):
     listaPalabras = frase.split()
@@ -13,12 +19,14 @@ def contadorPalabras(frase):
 
 def conversorMessenger(frase, num):
     fraseConvertida=""
+    indice = 0
     if(num%2==0):
-        for i, letra in enumerate(frase): # i es el índice, letra cada caracter
-            if(i%2==0):
-                fraseConvertida+=letra.upper()
+        while(indice < len(frase)):
+            if(indice%2==0):
+                fraseConvertida+=frase[indice].upper()
             else:
-                fraseConvertida+=letra.lower()
+                fraseConvertida+=frase[indice].lower()
+            indice+=1
     else:
         listaPalabras = frase.split()
         listaPalabras.reverse()

@@ -14,11 +14,15 @@ def contarVocales(cadena1, cadena2):
 def combinarCadenas(cadena1, cadena2):
     cadenaCombinada = cadena1 + cadena2
     nuevaCadena = ""
-    for i, caracter in enumerate(cadenaCombinada): # recorrer con índice
+    indice = 0
+    
+    while indice < len(cadenaCombinada): # recorrer con índice
         if(i % 2 == 0): # posición impar (índices pares)
             nuevaCadena += "C"
         else:
             nuevaCadena += caracter
+        indice+=1
+
     return nuevaCadena
 
 cadena1 = "Hola que tal"
