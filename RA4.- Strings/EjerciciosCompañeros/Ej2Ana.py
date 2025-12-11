@@ -12,7 +12,7 @@ resultado = ""
 contador = 2
 
 for letra in frase:
-    if(contador%2 == 0):
+    if(contador%2 != 0):
         resultado += "*"
     else:
         resultado += letra
